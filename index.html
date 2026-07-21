@@ -1,6 +1,477 @@
-<a href="tel:+918521212177" class="btn">📞 Call Now</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<a href="https://wa.me/918521212177?text=Hello%20SA%20Sigma%20Lubricants%2C%20I%20want%20to%20know%20more%20about%20your%20engine%20oil." 
-class="btn" target="_blank">
-💬 WhatsApp
-</a>
+<title>SA Sigma Lubricants | Premium Engine Oil</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+  scroll-behavior:smooth;
+}
+
+body{
+  background:#05070d;
+  color:white;
+  line-height:1.6;
+}
+
+header{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:rgba(5,7,13,.95);
+  border-bottom:1px solid #1d5fa7;
+  padding:18px 7%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{
+  font-size:27px;
+  font-weight:bold;
+  color:white;
+}
+
+.logo span{
+  color:#1685ff;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  margin-left:22px;
+  font-weight:bold;
+}
+
+nav a:hover{
+  color:#1685ff;
+}
+
+.hero{
+  min-height:90vh;
+  padding:70px 7%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:40px;
+  background:
+  radial-gradient(circle at 80% 40%,#0c4c91 0%,#05070d 45%);
+}
+
+.hero-text{
+  max-width:560px;
+}
+
+.hero h1{
+  font-size:58px;
+  line-height:1.1;
+  margin-bottom:20px;
+}
+
+.hero h1 span{
+  color:#1685ff;
+}
+
+.hero p{
+  font-size:20px;
+  color:#cbd5e1;
+  margin-bottom:30px;
+}
+
+.buttons{
+  display:flex;
+  gap:15px;
+  flex-wrap:wrap;
+}
+
+.btn{
+  display:inline-block;
+  padding:14px 25px;
+  border-radius:8px;
+  background:#1685ff;
+  color:white;
+  text-decoration:none;
+  font-weight:bold;
+  transition:.3s;
+}
+
+.btn:hover{
+  transform:translateY(-3px);
+  background:#0b67c9;
+}
+
+.btn-outline{
+  background:transparent;
+  border:1px solid #1685ff;
+}
+
+.hero-image{
+  width:48%;
+  text-align:center;
+}
+
+.hero-image img{
+  width:100%;
+  max-width:560px;
+  border-radius:20px;
+  box-shadow:0 0 45px #0757a8;
+}
+
+section{
+  padding:80px 7%;
+}
+
+.section-title{
+  text-align:center;
+  margin-bottom:45px;
+}
+
+.section-title h2{
+  font-size:38px;
+  color:#1685ff;
+}
+
+.section-title p{
+  color:#b9c3d1;
+}
+
+.product{
+  display:flex;
+  align-items:center;
+  gap:50px;
+  background:linear-gradient(135deg,#0b111d,#071c35);
+  border:1px solid #174d82;
+  border-radius:20px;
+  padding:35px;
+  max-width:1100px;
+  margin:auto;
+}
+
+.product img{
+  width:45%;
+  max-width:500px;
+  border-radius:15px;
+}
+
+.product-info{
+  flex:1;
+}
+
+.product-info h3{
+  font-size:32px;
+  color:#1685ff;
+  margin-bottom:15px;
+}
+
+.product-info p{
+  color:#d2d9e4;
+  margin-bottom:20px;
+}
+
+.features{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+  max-width:1100px;
+  margin:auto;
+}
+
+.card{
+  background:#0b111d;
+  border:1px solid #1b4775;
+  padding:28px 20px;
+  border-radius:15px;
+  text-align:center;
+}
+
+.card h3{
+  color:#1685ff;
+  margin:12px 0;
+}
+
+.card p{
+  color:#b9c3d1;
+}
+
+.about{
+  max-width:900px;
+  margin:auto;
+  text-align:center;
+}
+
+.about p{
+  color:#cbd5e1;
+  font-size:18px;
+}
+
+.contact{
+  text-align:center;
+  background:linear-gradient(135deg,#07182c,#05070d);
+}
+
+.contact h2{
+  font-size:38px;
+  color:#1685ff;
+  margin-bottom:15px;
+}
+
+.contact p{
+  color:#cbd5e1;
+  margin-bottom:25px;
+}
+
+footer{
+  text-align:center;
+  padding:25px;
+  background:#020307;
+  color:#9ca3af;
+  border-top:1px solid #183d63;
+}
+
+.float-buttons{
+  position:fixed;
+  right:18px;
+  bottom:18px;
+  z-index:2000;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.float-buttons a{
+  width:55px;
+  height:55px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-decoration:none;
+  font-size:25px;
+  box-shadow:0 4px 15px #000;
+}
+
+.call{
+  background:#1685ff;
+}
+
+.whatsapp{
+  background:#20b957;
+}
+
+@media(max-width:800px){
+
+  header{
+    padding:16px 5%;
+  }
+
+  nav{
+    display:none;
+  }
+
+  .hero{
+    min-height:auto;
+    padding:55px 5%;
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .hero h1{
+    font-size:44px;
+  }
+
+  .hero p{
+    font-size:18px;
+  }
+
+  .buttons{
+    justify-content:center;
+  }
+
+  .hero-image{
+    width:100%;
+  }
+
+  section{
+    padding:60px 5%;
+  }
+
+  .product{
+    flex-direction:column;
+    padding:20px;
+  }
+
+  .product img{
+    width:100%;
+  }
+
+  .features{
+    grid-template-columns:1fr;
+  }
+
+  .section-title h2{
+    font-size:32px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">SA <span>SIGMA</span></div>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#products">Products</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+
+  <div class="hero-text">
+    <h1>Power Your Ride.<br><span>Protect Your Engine.</span></h1>
+
+    <p>
+      Premium quality engine oil designed for smooth performance,
+      superior protection and longer engine life.
+    </p>
+
+    <div class="buttons">
+      <a href="#products" class="btn">View Product</a>
+      <a href="#contact" class="btn btn-outline">Contact Us</a>
+    </div>
+  </div>
+
+  <div class="hero-image">
+    <img src="product.jpg" alt="SA Sigma Lubricants Engine Oil">
+  </div>
+
+</section>
+
+<section id="products">
+
+  <div class="section-title">
+    <h2>Our Product</h2>
+    <p>Advanced protection for powerful performance</p>
+  </div>
+
+  <div class="product">
+
+    <img src="product.jpg" alt="SA Sigma Active 4T Engine Oil">
+
+    <div class="product-info">
+      <h3>SA Sigma Active 4T</h3>
+
+      <p>
+        Premium 4-stroke motorcycle engine oil developed for
+        smooth performance, engine protection and reliable everyday riding.
+      </p>
+
+      <p>
+        <b>Viscosity:</b> 20W-40<br>
+        <b>Type:</b> 4T Motorcycle Engine Oil<br>
+        <b>Technology:</b> Advanced Engine Protection
+      </p>
+
+      <a href="https://wa.me/918521212177?text=Hello%20SA%20Sigma%20Lubricants%2C%20I%20want%20to%20know%20more%20about%20your%20engine%20oil." class="btn">
+        Enquire on WhatsApp
+      </a>
+    </div>
+
+  </div>
+
+</section>
+
+<section>
+
+  <div class="section-title">
+    <h2>Why Choose SA Sigma?</h2>
+    <p>Performance you can trust</p>
+  </div>
+
+  <div class="features">
+
+    <div class="card">
+      <div style="font-size:40px;">⚙️</div>
+      <h3>Engine Protection</h3>
+      <p>Helps protect engine components during daily riding.</p>
+    </div>
+
+    <div class="card">
+      <div style="font-size:40px;">🏍️</div>
+      <h3>Smooth Performance</h3>
+      <p>Designed for smooth and reliable motorcycle performance.</p>
+    </div>
+
+    <div class="card">
+      <div style="font-size:40px;">🛡️</div>
+      <h3>Reliable Quality</h3>
+      <p>Premium lubrication technology for dependable performance.</p>
+    </div>
+
+  </div>
+
+</section>
+
+<section id="about">
+
+  <div class="section-title">
+    <h2>About SA Sigma Lubricants</h2>
+  </div>
+
+  <div class="about">
+    <p>
+      SA Sigma Lubricants is focused on delivering quality lubrication
+      solutions designed for modern engines and everyday performance.
+      Our goal is to provide reliable engine protection and smooth
+      performance for every ride.
+    </p>
+  </div>
+
+</section>
+
+<section class="contact" id="contact">
+
+  <h2>Contact Us</h2>
+
+  <p>
+    For product information, dealership and enquiries, contact us today.
+  </p>
+
+  <div class="buttons" style="justify-content:center;">
+
+    <a href="tel:+918521212177" class="btn">
+      📞 Call Now
+    </a>
+
+    <a href="https://wa.me/918521212177?text=Hello%20SA%20Sigma%20Lubricants%2C%20I%20want%20to%20know%20more%20about%20your%20products." class="btn" target="_blank">
+      💬 WhatsApp
+    </a>
+
+  </div>
+
+</section>
+
+<footer>
+  © 2026 SA Sigma Lubricants. All Rights Reserved.
+</footer>
+
+<div class="float-buttons">
+
+  <a href="tel:+918521212177" class="call">📞</a>
+
+  <a href="https://wa.me/918521212177" class="whatsapp" target="_blank">💬</a>
+
+</div>
+
+</body>
+      </html>
