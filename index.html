@@ -5,7 +5,73 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>SA Sigma Lubricants | Premium Engine Oil</title>
+.why-choose {
+  padding: 80px 6%;
+  text-align: center;
+  background: linear-gradient(135deg, #05070d, #071b38);
+}
 
+.why-choose h2 {
+  font-size: 42px;
+  margin-bottom: 12px;
+}
+
+.why-choose h2 span {
+  color: #1684ff;
+}
+
+.why-subtitle {
+  color: #bfc9d8;
+  font-size: 18px;
+  margin-bottom: 45px;
+}
+
+.benefit-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.benefit-card {
+  padding: 30px 20px;
+  border: 1px solid #1c5fa8;
+  border-radius: 18px;
+  background: rgba(10, 25, 50, 0.8);
+  transition: 0.3s;
+}
+
+.benefit-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px #087cff;
+}
+
+.benefit-icon {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.benefit-card h3 {
+  color: #1684ff;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.benefit-card p {
+  color: #c8d0dc;
+  font-size: 15px;
+}
+
+@media (max-width: 700px) {
+  .benefit-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .why-choose h2 {
+    font-size: 32px;
+  }
+}
 <style>
 *{
   margin:0;
@@ -442,7 +508,52 @@ footer{
         Enquire on WhatsApp
       </a>
     </div>
+<section class="why-choose">
+  <h2>Why Choose <span>SA Sigma Lubricants?</span></h2>
+  <p class="why-subtitle">
+    Engineered for performance. Designed for protection.
+  </p>
 
+  <div class="benefit-grid">
+
+    <div class="benefit-card">
+      <div class="benefit-icon">🛡️</div>
+      <h3>Superior Protection</h3>
+      <p>Helps protect your engine from wear and damage.</p>
+    </div>
+
+    <div class="benefit-card">
+      <div class="benefit-icon">⚡</div>
+      <h3>Smooth Performance</h3>
+      <p>Enjoy smoother engine performance on every ride.</p>
+    </div>
+
+    <div class="benefit-card">
+      <div class="benefit-icon">🔥</div>
+      <h3>Better Heat Control</h3>
+      <p>Designed to help control engine heat during operation.</p>
+    </div>
+
+    <div class="benefit-card">
+      <div class="benefit-icon">⛽</div>
+      <h3>Improved Mileage</h3>
+      <p>Advanced lubrication for better fuel efficiency.</p>
+    </div>
+
+    <div class="benefit-card">
+      <div class="benefit-icon">🏍️</div>
+      <h3>Advanced 4T Technology</h3>
+      <p>Developed for modern 4-stroke motorcycle engines.</p>
+    </div>
+
+    <div class="benefit-card">
+      <div class="benefit-icon">🌱</div>
+      <h3>Low Emission Technology</h3>
+      <p>Designed for cleaner and efficient engine performance.</p>
+    </div>
+
+  </div>
+</section>
   </div>
 
 </section>
