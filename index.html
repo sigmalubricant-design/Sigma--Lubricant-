@@ -1,234 +1,325 @@
-index. html 
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>SA Sigma Lubricants | Engine Oil</title>
+<title>SA Sigma Lubricants | Premium Engine Oil</title>
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+  scroll-behavior:smooth;
+}
 
-    body {
-      background: #05070b;
-      color: white;
-    }
+body{
+  background:#05070d;
+  color:white;
+  line-height:1.6;
+}
 
-    header {
-      background: #05070b;
-      padding: 18px 7%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      border-bottom: 1px solid #173d75;
-    }
+header{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:rgba(5,7,13,.95);
+  border-bottom:1px solid #1d5fa7;
+  padding:18px 7%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
 
-    .logo {
-      font-size: 25px;
-      font-weight: bold;
-      color: #ffffff;
-    }
+.logo{
+  font-size:27px;
+  font-weight:bold;
+  color:white;
+}
 
-    .logo span {
-      color: #1687ff;
-    }
+.logo span{
+  color:#1685ff;
+}
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 20px;
-      font-size: 15px;
-    }
+nav a{
+  color:white;
+  text-decoration:none;
+  margin-left:22px;
+  font-weight:bold;
+}
 
-    nav a:hover {
-      color: #1687ff;
-    }
+nav a:hover{
+  color:#1685ff;
+}
 
-    .hero {
-      min-height: 620px;
-      padding: 60px 7%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 40px;
-      background: radial-gradient(circle at right, #123c79, #05070b 55%);
-    }
+.hero{
+  min-height:90vh;
+  padding:70px 7%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:40px;
+  background:
+  radial-gradient(circle at 80% 40%,#0c4c91 0%,#05070d 45%);
+}
 
-    .hero-text {
-      max-width: 550px;
-    }
+.hero-text{
+  max-width:560px;
+}
 
-    .hero-text h1 {
-      font-size: 52px;
-      line-height: 1.1;
-      margin-bottom: 20px;
-    }
+.hero h1{
+  font-size:58px;
+  line-height:1.1;
+  margin-bottom:20px;
+}
 
-    .hero-text h1 span {
-      color: #1687ff;
-    }
+.hero h1 span{
+  color:#1685ff;
+}
 
-    .hero-text p {
-      font-size: 19px;
-      color: #c8d0dc;
-      margin-bottom: 28px;
-    }
+.hero p{
+  font-size:20px;
+  color:#cbd5e1;
+  margin-bottom:30px;
+}
 
-    .btn {
-      display: inline-block;
-      padding: 14px 25px;
-      background: #087cf0;
-      color: white;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      margin-right: 10px;
-    }
+.buttons{
+  display:flex;
+  gap:15px;
+  flex-wrap:wrap;
+}
 
-    .btn:hover {
-      background: #0059b8;
-    }
+.btn{
+  display:inline-block;
+  padding:14px 25px;
+  border-radius:8px;
+  background:#1685ff;
+  color:white;
+  text-decoration:none;
+  font-weight:bold;
+  transition:.3s;
+}
 
-    .product-image {
-      width: 47%;
-      max-width: 560px;
-      border-radius: 18px;
-      box-shadow: 0 0 40px #0b5dc0;
-    }
+.btn:hover{
+  transform:translateY(-3px);
+  background:#0b67c9;
+}
 
-    section {
-      padding: 70px 7%;
-    }
+.btn-outline{
+  background:transparent;
+  border:1px solid #1685ff;
+}
 
-    .title {
-      text-align: center;
-      font-size: 36px;
-      margin-bottom: 40px;
-    }
+.hero-image{
+  width:48%;
+  text-align:center;
+}
 
-    .title span {
-      color: #1687ff;
-    }
+.hero-image img{
+  width:100%;
+  max-width:560px;
+  border-radius:20px;
+  box-shadow:0 0 45px #0757a8;
+}
 
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
-    }
+section{
+  padding:80px 7%;
+}
 
-    .card {
-      background: #101722;
-      padding: 28px;
-      border-radius: 14px;
-      text-align: center;
-      border: 1px solid #1e3c62;
-    }
+.section-title{
+  text-align:center;
+  margin-bottom:45px;
+}
 
-    .card h3 {
-      color: #1687ff;
-      margin-bottom: 12px;
-      font-size: 22px;
-    }
+.section-title h2{
+  font-size:38px;
+  color:#1685ff;
+}
 
-    .card p {
-      color: #c8d0dc;
-      line-height: 1.6;
-    }
+.section-title p{
+  color:#b9c3d1;
+}
 
-    .product-section {
-      background: #080d15;
-    }
+.product{
+  display:flex;
+  align-items:center;
+  gap:50px;
+  background:linear-gradient(135deg,#0b111d,#071c35);
+  border:1px solid #174d82;
+  border-radius:20px;
+  padding:35px;
+  max-width:1100px;
+  margin:auto;
+}
 
-    .product-box {
-      max-width: 900px;
-      margin: auto;
-      background: #111a27;
-      padding: 30px;
-      border-radius: 18px;
-      display: flex;
-      align-items: center;
-      gap: 35px;
-    }
+.product img{
+  width:45%;
+  max-width:500px;
+  border-radius:15px;
+}
 
-    .product-box img {
-      width: 42%;
-      border-radius: 12px;
-    }
+.product-info{
+  flex:1;
+}
 
-    .product-info h2 {
-      font-size: 32px;
-      color: #1687ff;
-      margin-bottom: 15px;
-    }
+.product-info h3{
+  font-size:32px;
+  color:#1685ff;
+  margin-bottom:15px;
+}
 
-    .product-info p {
-      color: #d3d9e2;
-      line-height: 1.7;
-    }
+.product-info p{
+  color:#d2d9e4;
+  margin-bottom:20px;
+}
 
-    .specs {
-      margin-top: 20px;
-      line-height: 2;
-    }
+.features{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+  max-width:1100px;
+  margin:auto;
+}
 
-    .contact {
-      text-align: center;
-      background: linear-gradient(135deg, #071426, #0d315d);
-    }
+.card{
+  background:#0b111d;
+  border:1px solid #1b4775;
+  padding:28px 20px;
+  border-radius:15px;
+  text-align:center;
+}
 
-    .contact p {
-      margin: 15px 0 25px;
-      color: #d4dce7;
-    }
+.card h3{
+  color:#1685ff;
+  margin:12px 0;
+}
 
-    footer {
-      text-align: center;
-      padding: 25px;
-      background: #020305;
-      color: #9da7b4;
-    }
+.card p{
+  color:#b9c3d1;
+}
 
-    @media (max-width: 800px) {
-      nav {
-        display: none;
-      }
+.about{
+  max-width:900px;
+  margin:auto;
+  text-align:center;
+}
 
-      .hero {
-        flex-direction: column;
-        text-align: center;
-      }
+.about p{
+  color:#cbd5e1;
+  font-size:18px;
+}
 
-      .hero-text h1 {
-        font-size: 38px;
-      }
+.contact{
+  text-align:center;
+  background:linear-gradient(135deg,#07182c,#05070d);
+}
 
-      .product-image {
-        width: 90%;
-      }
+.contact h2{
+  font-size:38px;
+  color:#1685ff;
+  margin-bottom:15px;
+}
 
-      .cards {
-        grid-template-columns: 1fr;
-      }
+.contact p{
+  color:#cbd5e1;
+  margin-bottom:25px;
+}
 
-      .product-box {
-        flex-direction: column;
-        text-align: center;
-      }
+footer{
+  text-align:center;
+  padding:25px;
+  background:#020307;
+  color:#9ca3af;
+  border-top:1px solid #183d63;
+}
 
-      .product-box img {
-        width: 90%;
-      }
-    }
-  </style>
+.float-buttons{
+  position:fixed;
+  right:18px;
+  bottom:18px;
+  z-index:2000;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.float-buttons a{
+  width:55px;
+  height:55px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-decoration:none;
+  font-size:25px;
+  box-shadow:0 4px 15px #000;
+}
+
+.call{
+  background:#1685ff;
+}
+
+.whatsapp{
+  background:#20b957;
+}
+
+@media(max-width:800px){
+
+  header{
+    padding:16px 5%;
+  }
+
+  nav{
+    display:none;
+  }
+
+  .hero{
+    min-height:auto;
+    padding:55px 5%;
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .hero h1{
+    font-size:44px;
+  }
+
+  .hero p{
+    font-size:18px;
+  }
+
+  .buttons{
+    justify-content:center;
+  }
+
+  .hero-image{
+    width:100%;
+  }
+
+  section{
+    padding:60px 5%;
+  }
+
+  .product{
+    flex-direction:column;
+    padding:20px;
+  }
+
+  .product img{
+    width:100%;
+  }
+
+  .features{
+    grid-template-columns:1fr;
+  }
+
+  .section-title h2{
+    font-size:32px;
+  }
+}
+</style>
 </head>
 
 <body>
@@ -239,7 +330,7 @@ index. html
   <nav>
     <a href="#home">Home</a>
     <a href="#products">Products</a>
-    <a href="#benefits">Benefits</a>
+    <a href="#about">About</a>
     <a href="#contact">Contact</a>
   </nav>
 </header>
@@ -247,92 +338,140 @@ index. html
 <section class="hero" id="home">
 
   <div class="hero-text">
-    <h1>Power. Protection. <span>Performance.</span></h1>
+    <h1>Power Your Ride.<br><span>Protect Your Engine.</span></h1>
 
     <p>
       Premium quality engine oil designed for smooth performance,
       superior protection and longer engine life.
     </p>
 
-    <a href="#products" class="btn">View Product</a>
-    <a href="#contact" class="btn">Contact Us</a>
+    <div class="buttons">
+      <a href="#products" class="btn">View Product</a>
+      <a href="#contact" class="btn btn-outline">Contact Us</a>
+    </div>
   </div>
 
-  <img src="product.jpg" class="product-image" alt="Sigma Lubricants Engine Oil">
-
-</section>
-
-<section id="benefits">
-
-  <h2 class="title">Why Choose <span>Sigma?</span></h2>
-
-  <div class="cards">
-
-    <div class="card">
-      <h3>Superior Protection</h3>
-      <p>Engine को wear और tear से बेहतर सुरक्षा प्रदान करता है।</p>
-    </div>
-
-    <div class="card">
-      <h3>Better Performance</h3>
-      <p>बेहतर lubrication और smooth engine performance के लिए।</p>
-    </div>
-
-    <div class="card">
-      <h3>Longer Engine Life</h3>
-      <p>Engine को साफ रखने और बेहतर performance में मदद करता है।</p>
-    </div>
-
+  <div class="hero-image">
+    <img src="product.jpg" alt="SA Sigma Lubricants Engine Oil">
   </div>
 
 </section>
 
-<section class="product-section" id="products">
+<section id="products">
 
-  <h2 class="title">Our <span>Product</span></h2>
+  <div class="section-title">
+    <h2>Our Product</h2>
+    <p>Advanced protection for powerful performance</p>
+  </div>
 
-  <div class="product-box">
+  <div class="product">
 
-    <img src="product.jpg" alt="Sigma Active 4T Engine Oil">
+    <img src="product.jpg" alt="SA Sigma Active 4T Engine Oil">
 
     <div class="product-info">
-
-      <h2>Sigma Active 4T</h2>
+      <h3>SA Sigma Active 4T</h3>
 
       <p>
-        Premium 4-stroke motorcycle engine oil with advanced
-        synthetic technology and high-performance additives.
+        Premium 4-stroke motorcycle engine oil developed for
+        smooth performance, engine protection and reliable everyday riding.
       </p>
 
-      <div class="specs">
+      <p>
         <b>Viscosity:</b> 20W-40<br>
-        <b>Type:</b> 4T Engine Oil<br>
-        <b>Specification:</b> API SM | JASO MA-2<br>
-        <b>Capacity:</b> 900 ml / 1 L<br>
-        <b>Special:</b> Gift Inside 🎁
-      </div>
+        <b>Type:</b> 4T Motorcycle Engine Oil<br>
+        <b>Technology:</b> Advanced Engine Protection
+      </p>
 
+      <a href="https://wa.me/918521212177?text=Hello%20SA%20Sigma%20Lubricants%2C%20I%20want%20to%20know%20more%20about%20your%20engine%20oil." class="btn">
+        Enquire on WhatsApp
+      </a>
     </div>
 
+  </div>
+
+</section>
+
+<section>
+
+  <div class="section-title">
+    <h2>Why Choose SA Sigma?</h2>
+    <p>Performance you can trust</p>
+  </div>
+
+  <div class="features">
+
+    <div class="card">
+      <div style="font-size:40px;">⚙️</div>
+      <h3>Engine Protection</h3>
+      <p>Helps protect engine components during daily riding.</p>
+    </div>
+
+    <div class="card">
+      <div style="font-size:40px;">🏍️</div>
+      <h3>Smooth Performance</h3>
+      <p>Designed for smooth and reliable motorcycle performance.</p>
+    </div>
+
+    <div class="card">
+      <div style="font-size:40px;">🛡️</div>
+      <h3>Reliable Quality</h3>
+      <p>Premium lubrication technology for dependable performance.</p>
+    </div>
+
+  </div>
+
+</section>
+
+<section id="about">
+
+  <div class="section-title">
+    <h2>About SA Sigma Lubricants</h2>
+  </div>
+
+  <div class="about">
+    <p>
+      SA Sigma Lubricants is focused on delivering quality lubrication
+      solutions designed for modern engines and everyday performance.
+      Our goal is to provide reliable engine protection and smooth
+      performance for every ride.
+    </p>
   </div>
 
 </section>
 
 <section class="contact" id="contact">
 
-  <h2 class="title">Contact <span>Us</span></h2>
+  <h2>Contact Us</h2>
 
-  <p>For product details, dealership and enquiries, contact Sigma Lubricants.</p>
+  <p>
+    For product information, dealership and enquiries, contact us today.
+  </p>
 
-  <a href="tel:+918521212177" class="btn">📞 Call Now</a>
+  <div class="buttons" style="justify-content:center;">
 
-  <a href="https://wa.me/918521212177" class="btn">💬 WhatsApp</a>
+    <a href="tel:+918521212177" class="btn">
+      📞 Call Now
+    </a>
+
+    <a href="https://wa.me/918521212177?text=Hello%20SA%20Sigma%20Lubricants%2C%20I%20want%20to%20know%20more%20about%20your%20products." class="btn" target="_blank">
+      💬 WhatsApp
+    </a>
+
+  </div>
 
 </section>
 
 <footer>
   © 2026 SA Sigma Lubricants. All Rights Reserved.
 </footer>
+
+<div class="float-buttons">
+
+  <a href="tel:+918521212177" class="call">📞</a>
+
+  <a href="https://wa.me/918521212177" class="whatsapp" target="_blank">💬</a>
+
+</div>
 
 </body>
 </html>
