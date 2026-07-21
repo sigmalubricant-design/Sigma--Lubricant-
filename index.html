@@ -116,7 +116,63 @@ nav a:hover{
   width:48%;
   text-align:center;
 }
+<section id="dealer-enquiry">
 
+  <div class="section-title">
+    <h2>Become a Dealer</h2>
+    <p>Join SA Sigma Lubricants and grow your business with us</p>
+  </div>
+
+  <form onsubmit="sendDealerEnquiry(event)" class="enquiry-form">
+
+    <input type="text" id="dealerName" placeholder="Your Name" required>
+
+    <input type="tel" id="dealerPhone" placeholder="Mobile Number" required>
+
+    <input type="text" id="dealerCity" placeholder="City / District" required>
+
+    <select id="dealerType" required>
+      <option value="">Select Enquiry Type</option>
+      <option>Dealer Enquiry</option>
+      <option>Distributor Enquiry</option>
+      <option>Product Enquiry</option>
+    </select>
+
+    <textarea id="dealerMessage" placeholder="Write your message"></textarea>
+
+    <button type="submit" class="btn">
+      💬 Send Enquiry on WhatsApp
+    </button>
+
+  </form>
+
+</section>
+
+<script>
+function sendDealerEnquiry(event){
+
+  event.preventDefault();
+
+  let name = document.getElementById("dealerName").value;
+  let phone = document.getElementById("dealerPhone").value;
+  let city = document.getElementById("dealerCity").value;
+  let type = document.getElementById("dealerType").value;
+  let message = document.getElementById("dealerMessage").value;
+
+  let whatsappMessage =
+  "Hello SA Sigma Lubricants,%0A%0A" +
+  "Name: " + encodeURIComponent(name) + "%0A" +
+  "Mobile: " + encodeURIComponent(phone) + "%0A" +
+  "City: " + encodeURIComponent(city) + "%0A" +
+  "Enquiry: " + encodeURIComponent(type) + "%0A" +
+  "Message: " + encodeURIComponent(message);
+
+  window.open(
+    "https://wa.me/918521212177?text=" + whatsappMessage,
+    "_blank"
+  );
+}
+</script>
 .hero-image img{
   width:100%;
   max-width:560px;
@@ -515,3 +571,60 @@ footer{
   </div>
 
 </section>
+<section id="dealer-enquiry">
+
+  <div class="section-title">
+    <h2>Become a Dealer</h2>
+    <p>Join SA Sigma Lubricants and grow your business with us</p>
+  </div>
+
+  <form onsubmit="sendDealerEnquiry(event)" class="enquiry-form">
+
+    <input type="text" id="dealerName" placeholder="Your Name" required>
+
+    <input type="tel" id="dealerPhone" placeholder="Mobile Number" required>
+
+    <input type="text" id="dealerCity" placeholder="City / District" required>
+
+    <select id="dealerType" required>
+      <option value="">Select Enquiry Type</option>
+      <option>Dealer Enquiry</option>
+      <option>Distributor Enquiry</option>
+      <option>Product Enquiry</option>
+    </select>
+
+    <textarea id="dealerMessage" placeholder="Write your message"></textarea>
+
+    <button type="submit" class="btn">
+      💬 Send Enquiry on WhatsApp
+    </button>
+
+  </form>
+
+</section>
+
+<script>
+function sendDealerEnquiry(event){
+
+  event.preventDefault();
+
+  let name = document.getElementById("dealerName").value;
+  let phone = document.getElementById("dealerPhone").value;
+  let city = document.getElementById("dealerCity").value;
+  let type = document.getElementById("dealerType").value;
+  let message = document.getElementById("dealerMessage").value;
+
+  let whatsappMessage =
+  "Hello SA Sigma Lubricants,%0A%0A" +
+  "Name: " + encodeURIComponent(name) + "%0A" +
+  "Mobile: " + encodeURIComponent(phone) + "%0A" +
+  "City: " + encodeURIComponent(city) + "%0A" +
+  "Enquiry: " + encodeURIComponent(type) + "%0A" +
+  "Message: " + encodeURIComponent(message);
+
+  window.open(
+    "https://wa.me/918521212177?text=" + whatsappMessage,
+    "_blank"
+  );
+}
+</script>
