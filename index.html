@@ -1,91 +1,40 @@
-<section id="dealer-enquiry">
+<section id="products">
 
   <div class="section-title">
-    <h2>Become a Dealer</h2>
-    <p>Join SA Sigma Lubricants and grow your business with us</p>
+    <h2>Our Products</h2>
+    <p>Premium lubrication for powerful performance</p>
   </div>
 
-  <form onsubmit="sendDealerEnquiry(event)" class="enquiry-form">
+  <div class="features">
 
-    <input type="text" id="dealerName" placeholder="Your Name" required>
+    <div class="card">
+      <h3>🏍️ SA Sigma Active 4T</h3>
+      <p><b>20W-40 | 4T Motorcycle Engine Oil</b></p>
+      <p>Premium engine protection, smooth performance and reliable lubrication for everyday riding.</p>
+      <br>
+      <a href="https://wa.me/918521212177?text=Hello%20SA%20Sigma%20Lubricants%2C%20I%20want%20to%20buy%20SA%20Sigma%20Active%204T." class="btn" target="_blank">
+        Enquire Now
+      </a>
+    </div>
 
-    <input type="tel" id="dealerPhone" placeholder="Mobile Number" required>
+    <div class="card">
+      <h3>⚙️ Advanced Protection</h3>
+      <p>Designed to help reduce engine wear and provide smooth engine performance.</p>
+      <br>
+      <a href="https://wa.me/918521212177?text=Hello%20SA%20Sigma%20Lubricants%2C%20I%20want%20product%20details." class="btn" target="_blank">
+        Get Details
+      </a>
+    </div>
 
-    <input type="text" id="dealerCity" placeholder="City / District" required>
+    <div class="card">
+      <h3>🤝 Become a Dealer</h3>
+      <p>Interested in dealership or distribution? Contact us for business enquiries.</p>
+      <br>
+      <a href="https://wa.me/918521212177?text=Hello%20SA%20Sigma%20Lubricants%2C%20I%20am%20interested%20in%20becoming%20a%20dealer." class="btn" target="_blank">
+        Dealer Enquiry
+      </a>
+    </div>
 
-    <select id="dealerType" required>
-      <option value="">Select Enquiry Type</option>
-      <option>Dealer Enquiry</option>
-      <option>Distributor Enquiry</option>
-      <option>Product Enquiry</option>
-    </select>
-
-    <textarea id="dealerMessage" placeholder="Write your message"></textarea>
-
-    <button type="submit" class="btn">
-      💬 Send Enquiry on WhatsApp
-    </button>
-
-  </form>
+  </div>
 
 </section>
-
-<script>
-function sendDealerEnquiry(event){
-
-  event.preventDefault();
-
-  let name = document.getElementById("dealerName").value;
-  let phone = document.getElementById("dealerPhone").value;
-  let city = document.getElementById("dealerCity").value;
-  let type = document.getElementById("dealerType").value;
-  let message = document.getElementById("dealerMessage").value;
-
-  let whatsappMessage =
-  "Hello SA Sigma Lubricants,%0A%0A" +
-  "Name: " + encodeURIComponent(name) + "%0A" +
-  "Mobile: " + encodeURIComponent(phone) + "%0A" +
-  "City: " + encodeURIComponent(city) + "%0A" +
-  "Enquiry: " + encodeURIComponent(type) + "%0A" +
-  "Message: " + encodeURIComponent(message);
-
-  window.open(
-    "https://wa.me/918521212177?text=" + whatsappMessage,
-    "_blank"
-  );
-}
-    </script>
-.enquiry-form{
-  max-width:650px;
-  margin:auto;
-  display:flex;
-  flex-direction:column;
-  gap:15px;
-  background:#0b111d;
-  padding:30px;
-  border-radius:18px;
-  border:1px solid #1b4775;
-}
-
-.enquiry-form input,
-.enquiry-form select,
-.enquiry-form textarea{
-  width:100%;
-  padding:15px;
-  border-radius:8px;
-  border:1px solid #315b86;
-  background:#05070d;
-  color:white;
-  font-size:16px;
-}
-
-.enquiry-form textarea{
-  min-height:120px;
-  resize:vertical;
-}
-
-.enquiry-form button{
-  border:none;
-  cursor:pointer;
-  font-size:16px;
-}
